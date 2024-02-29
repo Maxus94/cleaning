@@ -1,0 +1,23 @@
+.header-list {
+    width: 1440px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(79, 24, 24);
+}
+
+.heade-link {
+    color: bisque;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.is-active {
+    font-weight: 600;
+}
