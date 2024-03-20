@@ -4,19 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <header>
-      <ul class="header-list">
-        <li><a class="heade-link is-active" href="">Moj do dyr</a></li>
-        <li><a class="heade-link" href="">About us</a></li>
-        <li><a class="heade-link" href="">Our services</a></li>
-        <li><a class="heade-link" href="">Book</a></li>
-        <li><a class="heade-link" href="">Contacts</a></li>
-      </ul>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="logo-link link" href="./index.html">Moj do dyr</a>
+          <ul class="list header-list">
+            <li>
+              <a class="nav-link link active-nav-link" href="./index.html"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a class="nav-link link" href="">Our services</a>
+            </li>
+            <li>
+              <a class="nav-link link" href="">Book</a>
+            </li>
+            <li><a class="nav-link link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="contact">
+          <ul class="list contact-list">
+            <li>
+              <a class="contact-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-open-icon" width="32" height="22">
+            <use
+              class="icon-menu"
+              href="./img/icons.svg#icon-charm_menu-hamburger"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./img/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="list mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link active-mob-link" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html">About us</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html">Services</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html">Reviews</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Book a service</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <section></section>
     <footer></footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
